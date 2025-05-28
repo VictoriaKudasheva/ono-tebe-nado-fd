@@ -13,16 +13,14 @@
     <header class="header">
       <nav>
         <ul class="header__menu-list">
-          <li
-            class="header__menu-list-item header__menu-list-item_no-bullit header__menu-list-item_active"
-          >
-            <a>главная</a>
+          <li class="header__menu-list-item header__menu-list-item_no-bullit">
+            <a class="header__link header__link_active">главная</a>
           </li>
           <li class="header__menu-list-item">
-            <a>посмотреть лоты</a>
+            <a class="header__link">посмотреть лоты</a>
           </li>
           <li class="header__menu-list-item">
-            <a>об аукционе</a>
+            <a class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +40,7 @@
             <a href="mailto:mail@example.com">info@sobaka.ge</a>
           </li>
           <li class="address-list-item">
-            <a>наб. Принсенграхт 263- 265, Амстердам</a>
+            <span>наб. Принсенграхт 263- 265, Амстердам</span>
           </li>
         </ul>
       </address>
@@ -64,11 +62,6 @@
           </p>
           <button class="cover__description-bet-button">Сделать ставку</button>
         </div>
-        <img
-          class="cover__background-image"
-          src="./images/cover.jpg"
-          alt="картинка обложки"
-        />
         <div class="overlay"></div>
       </section>
       <section class="lots">
@@ -76,30 +69,25 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                <span class="card__title">
+              <article class="card card_type_film">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </span>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
+                <div class="overlay"></div>
               </article>
-              <img
-                class="lot_image"
-                src="./images/card-lot-01.jpg"
-                alt="первый лот"
-              />
-              <div class="overlay"></div>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                <span class="card__title">
+              <article class="card card_type_book">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </span>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -108,34 +96,24 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
+                <div class="overlay"></div>
               </article>
-              <img
-                class="lot_image"
-                src="./images/card-lot-02.jpg"
-                alt="второй лот"
-              />
-              <div class="overlay"></div>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
-                <span class="card__title">
+              <article class="card card_type_picture">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </span>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
+                <div class="overlay"></div>
               </article>
-              <img
-                class="lot_image"
-                src="./images/card-lot-03.jpg"
-                alt="третий лот"
-              />
-              <div class="overlay"></div>
             </a>
           </li>
         </ul>
@@ -152,16 +130,16 @@
           </div>
         </div>
         <div class="about__column-text">
-          <div class="about__title">об аукционе</div>
+          <h2 class="about__title">об аукционе</h2>
           <div class="about_text">
-            <p class="about_text-description about_text-description-first">
+            <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
-              на один аукцион. Потому что кому нужен дневник девочки-подростка
-              или картина, которую может нарисовать даже ребёнок? Кому нужны все
-              эти странные вещи, созданные любителями?
+              дорогого антиквариата. Наши лоты вообще не должны были попасть
+              ни&nbsp;на один аукцион. Потому что кому нужен дневник
+              девочки-подростка или картина, которую может нарисовать даже
+              ребёнок? Кому нужны все эти странные вещи, созданные любителями?
             </p>
-            <p class="about_text-description">
+            <p>
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -190,48 +168,46 @@
       </address>
       <nav>
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item footer__menu-list-item_active">
-            <a>главная</a>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link footer__menu-link_active">главная</a>
           </li>
           <li class="footer__menu-list-item">
-            <a>посмотреть лоты</a>
+            <a class="footer__menu-link">посмотреть лоты</a>
           </li>
           <li class="footer__menu-list-item">
-            <a>об аукционе</a>
+            <a class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div class="footer__social">
-        <ul class="footer__social-list">
-          <li class="footer__social-list-item">
-            <a href="#0">
-              <img
-                class="footer__social-icon"
-                src="./images/yt.svg"
-                alt="youtube"
-              />
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#0">
-              <img
-                class="footer__social-icon"
-                src="./images/vk.svg"
-                alt="vkontakte"
-              />
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#0">
-              <img
-                class="footer__social-icon"
-                src="./images/pinterest.svg"
-                alt="pinterest"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#0" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/yt.svg"
+              alt="youtube"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/vk.svg"
+              alt="vkontakte"
+            />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" target="_blank">
+            <img
+              class="footer__social-icon"
+              src="./images/pinterest.svg"
+              alt="pinterest"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
